@@ -125,6 +125,10 @@ import { WorkflowReminderList } from "./workflowReminder/WorkflowReminderList";
 import { WorkflowReminderCreate } from "./workflowReminder/WorkflowReminderCreate";
 import { WorkflowReminderEdit } from "./workflowReminder/WorkflowReminderEdit";
 import { WorkflowReminderShow } from "./workflowReminder/WorkflowReminderShow";
+import { PromoList } from "./promo/PromoList";
+import { PromoCreate } from "./promo/PromoCreate";
+import { PromoEdit } from "./promo/PromoEdit";
+import { PromoShow } from "./promo/PromoShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -360,6 +364,13 @@ const App = (): React.ReactElement => {
           edit={WorkflowReminderEdit}
           create={WorkflowReminderCreate}
           show={WorkflowReminderShow}
+        />
+        <Resource
+          name="Promo"
+          list={PromoList}
+          edit={PromoEdit}
+          create={PromoCreate}
+          show={PromoShow}
         />
       </Admin>
     </div>
